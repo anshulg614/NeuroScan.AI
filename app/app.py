@@ -73,18 +73,12 @@ def get_gemini_recommendations(predicted_class, confidence, patient_data, probab
             "Keep recommendations evidence-based and specific to the patient's condition."
         )
         
-        # Structure the request for Gemini 2.0
-        request = {
-            "contents": [{
-                "parts": [{"text": prompt_text}]
-            }]
-        }
-        
         # Debug logging
         st.write("Debug: Sending request to Gemini...")
         
         try:
-            response = model.generate_content(request)
+            # Pass the prompt text directly to generate_content
+            response = model.generate_content(prompt_text)
             st.write("Debug: Received response from Gemini")
             
             # Extract text from response
@@ -199,7 +193,7 @@ if 'predictions' not in st.session_state:
 if st.session_state.step == 1:
     st.markdown("### Step 1: Upload MRI Scan")
     uploaded_file = st.file_uploader("Choose a brain MRI image...", type=["jpg", "jpeg", "png"])
-    
+
     if uploaded_file:
         image = Image.open(uploaded_file)
         st.image(image, caption="Uploaded MRI Scan", use_column_width=True)
