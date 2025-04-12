@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: neuroscan-ai
+    env: docker
+    region: oregon
+    plan: free
+    healthCheckPath: /_stcore/health
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.10.0 
