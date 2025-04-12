@@ -25,7 +25,6 @@ build/
 *.swo
 
 # Large files and datasets
-Brain-Tumor-Classification-DataSet/
 *.h5
 *.weights
 *.model
