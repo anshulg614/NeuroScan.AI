@@ -34,3 +34,6 @@ build/
 
 # Logs
 *.log 
+
+# Generated PDF reports
+app/*.pdf 
