@@ -76,7 +76,7 @@ The system uses a MobileNetV2 base model (pre-trained on ImageNet) with addition
 
 ## Contributors
 
-- [Anshul Gupta](https://github.com/anshulg614)
+- [Anshul Ganumpally](https://github.com/anshulg614)
 
 ## Important Note
 
