@@ -2,7 +2,7 @@ import streamlit as st
 
 # Set page config must be the first Streamlit command
 st.set_page_config(
-    page_title="NueroScan.AI - Brain Tumor Classification",
+    page_title="NeuroScan.AI - Brain Tumor Classification",
     page_icon="🧠",
     layout="wide"
 )
@@ -174,7 +174,7 @@ st.markdown("""
     """, unsafe_allow_html=True)
 
 # Title and description
-st.title("🧠 NueroScan.AI")
+st.title("NeuroScan.AI 🧠")
 st.markdown("""
     ### Brain Tumor Classification System
     Upload a brain MRI scan and provide patient information for a comprehensive analysis and treatment recommendations.

@@ -1,10 +1,10 @@
-"""Usage guide and help text for the NueroScan.AI application."""
+"""Usage guide and help text for the NeuroScan.AI application."""
 
 def get_welcome_text():
     return """
-    # Welcome to NueroScan.AI 🧠
+    # Welcome to NeuroScan.AI 🧠
 
-    NueroScan.AI helps medical professionals analyze brain MRI scans and generate comprehensive medical reports with personalized treatment recommendations.
+    NeuroScan.AI helps medical professionals analyze brain MRI scans and generate comprehensive medical reports with personalized treatment recommendations.
     """
 
 def get_usage_steps():

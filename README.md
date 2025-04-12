@@ -1,6 +1,6 @@
-# NueroScan.AI 🧠
+# NeuroScan.AI 🧠
 
-NueroScan.AI is an advanced brain tumor classification system that combines state-of-the-art deep learning with personalized medical recommendations. The system analyzes MRI scans, provides detailed classifications, and generates comprehensive medical reports with treatment recommendations.
+NeuroScan.AI is an advanced brain tumor classification system that combines state-of-the-art deep learning with personalized medical recommendations. The system analyzes MRI scans, provides detailed classifications, and generates comprehensive medical reports with treatment recommendations.
 
 ## Features
 
@@ -27,7 +27,7 @@ NueroScan.AI is an advanced brain tumor classification system that combines stat
 ## Project Structure
 
 ```
-NueroScan.AI/
+NeuroScan.AI/
 ├── app/                    # Streamlit application directory
 │   ├── app.py             # Main Streamlit application
 │   └── model_utils.py     # Model loading and preprocessing utilities
@@ -39,8 +39,8 @@ NueroScan.AI/
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/NueroScan.AI.git
-cd NueroScan.AI
+git clone https://github.com/yourusername/NeuroScan.AI.git
+cd NeuroScan.AI
 ```
 
 2. Create and activate a virtual environment:
