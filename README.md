@@ -1,13 +1,20 @@
-# NueroScan.AI
+# NueroScan.AI 🧠
 
-A deep learning-powered brain tumor classification system using MobileNetV2 architecture. This application can classify brain MRI scans into four categories: Glioma Tumor, Meningioma Tumor, No Tumor, and Pituitary Tumor.
+NueroScan.AI is an advanced brain tumor classification system that combines state-of-the-art deep learning with personalized medical recommendations. The system analyzes MRI scans, provides detailed classifications, and generates comprehensive medical reports with treatment recommendations.
 
 ## Features
 
-- Real-time brain tumor classification from MRI scans
-- User-friendly web interface built with Streamlit
-- Powered by MobileNetV2 architecture (71% accuracy)
-- Fast and efficient image processing
+- 🔍 **Advanced MRI Analysis**: Utilizes deep learning (MobileNetV2) to analyze brain MRI scans
+- 📊 **Multi-Class Classification**: Identifies different types of brain tumors with confidence scores
+- 👤 **Patient Information Integration**: Collects and incorporates detailed patient data for personalized analysis
+- 🤖 **AI-Powered Recommendations**: Generates personalized treatment recommendations using Google's Gemini AI
+- 📄 **Professional PDF Reports**: Creates comprehensive medical reports with:
+  - Patient information
+  - MRI scan analysis
+  - Classification results with confidence scores
+  - Personalized treatment recommendations
+  - Space for doctor's approval and notes
+- ✅ **Medical Validation**: Includes a section for doctor's review and approval
 
 ## Tech Stack
 
@@ -31,48 +38,99 @@ NueroScan.AI/
 ## Installation
 
 1. Clone the repository:
-   ```bash
-   git clone git@github.com:anshulg614/NueroScan.AI.git
-   cd NueroScan.AI
-   ```
+```bash
+git clone https://github.com/yourusername/NueroScan.AI.git
+cd NueroScan.AI
+```
 
 2. Create and activate a virtual environment:
-   ```bash
-   python -m venv venv
-   source venv/bin/activate  # On Windows: venv\Scripts\activate
-   ```
+```bash
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+```
 
 3. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
+```bash
+pip install -r requirements.txt
+```
 
-## Usage
+## Usage Guide
 
-1. Train the model (optional, pre-trained weights provided):
-   ```bash
-   python brain-tumor-detection-70-accuracy.py
-   ```
+1. **Launch the Application**:
+```bash
+cd app
+streamlit run app.py
+```
 
-2. Run the Streamlit application:
-   ```bash
-   cd app
-   streamlit run app.py
-   ```
+2. **Upload MRI Scan**:
+   - Click the "Upload MRI Scan" button
+   - Select a clear, high-quality MRI image file
+   - The system will automatically process and analyze the image
 
-3. Open your web browser and navigate to `http://localhost:8501`
+3. **Enter Patient Information**:
+   - Fill in the patient details form, including:
+     - Personal Information (name, age, gender)
+     - Medical History
+     - Current Symptoms
+     - Previous Treatments
+     - Family History
+     - Lifestyle Factors
 
-## Model Architecture
+4. **Review Analysis**:
+   - View the tumor classification results
+   - Check confidence scores and probability distribution
+   - Review AI-generated treatment recommendations
 
-The system uses a MobileNetV2 base model (pre-trained on ImageNet) with additional custom layers:
-- Global Average Pooling
-- Dense layer (128 units, ReLU activation)
-- Dropout layer (0.5)
-- Output layer (4 units, Softmax activation)
+5. **Generate PDF Report**:
+   - Click "Generate Report" to create a comprehensive medical report
+   - The PDF report includes:
+     - Patient information
+     - MRI scan analysis
+     - Classification results
+     - Personalized treatment recommendations
+     - Medical disclaimer
+     - Doctor's approval section
+
+6. **Medical Validation**:
+   - Take the generated report to your healthcare provider
+   - The report includes a dedicated section for doctor's review and approval
+   - Your doctor can:
+     - Review the AI analysis
+     - Add additional notes
+     - Sign and approve the recommendations
+     - Add their medical license number for validation
+
+## Important Notes
+
+- 🏥 **Medical Disclaimer**: This tool is designed to assist medical professionals, not replace them. All recommendations should be reviewed and approved by a qualified healthcare provider.
+- 📋 **Data Privacy**: Patient information is processed locally and not stored on any external servers.
+- 🔒 **Security**: The system uses secure, encrypted connections for all API communications.
+
+## Model Information
+
+The system uses a fine-tuned MobileNetV2 architecture trained on a comprehensive dataset of brain MRI scans. The model achieves high accuracy in classifying different types of brain tumors while maintaining efficient processing times.
+
+## Citations
+
+This project builds upon and acknowledges the following sources:
+
+1. Brain Tumor Classification Dataset by Sartaj Bhuvaji
+   - Source: Kaggle
+   - URL: [Brain Tumor Classification Dataset](https://www.kaggle.com/sartajbhuvaji/brain-tumor-classification-mri)
+
+2. Model Development Reference
+   - Author: Amirhosein Mousavian
+   - Source: Kaggle
+   - Accuracy: 70%
+   - URL: [Brain Tumor Detection](https://www.kaggle.com/mousavian/brain-tumor-detection)
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request. For major changes, please open an issue first to discuss what you would like to change.
 
 ## License
 
-[MIT License](LICENSE)
+This project is licensed under the MIT License - see the LICENSE file for details.
 
 ## Contributors
 
