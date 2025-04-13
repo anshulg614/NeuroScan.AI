@@ -9,10 +9,11 @@ RUN apt-get update && apt-get install -y \
 
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Default Streamlit port
-EXPOSE 8501
+# Remove explicit port exposure since Render will assign its own
+# EXPOSE 8501
 
-HEALTHCHECK CMD curl --fail http://localhost:8501/_stcore/health
+# Remove healthcheck since it might conflict with Render's own healthcheck
+# HEALTHCHECK CMD curl --fail http://localhost:8501/_stcore/health
 
 # Command to run the app
-CMD streamlit run app/app.py --server.port=$PORT --server.address=0.0.0.0 --server.headless=true 
+CMD streamlit run app/app.py --server.port=$PORT --server.address=0.0.0.0 
