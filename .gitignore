@@ -25,7 +25,6 @@ build/
 *.swo
 
 # Large files and datasets
-*.h5
 *.weights
 *.model
 
