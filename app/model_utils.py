@@ -1,11 +1,16 @@
 import tensorflow as tf
+import os
+
+# Disable GPU and suppress warnings
+os.environ['CUDA_VISIBLE_DEVICES'] = '-1'
+tf.get_logger().setLevel('ERROR')
+
 from tensorflow.keras.applications import MobileNetV2
 from tensorflow.keras.layers import Dense, GlobalAveragePooling2D, Dropout
 from tensorflow.keras.models import Model, Sequential
 import numpy as np
 from PIL import Image
 import cv2
-import os
 
 def load_model():
     """Load the trained MobileNetV2 model with saved weights."""
