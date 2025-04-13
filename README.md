@@ -2,6 +2,8 @@
 
 NeuroScan.AI is an advanced brain tumor classification system that combines state-of-the-art deep learning with personalized medical recommendations. The system analyzes MRI scans, provides detailed classifications, and generates comprehensive medical reports with treatment recommendations.
 
+🌐 **Live Demo**: [https://neuroscan-ai.onrender.com/](https://neuroscan-ai.onrender.com/)
+
 ## Features
 
 - 🔍 **Advanced MRI Analysis**: Utilizes deep learning (MobileNetV2) to analyze brain MRI scans
