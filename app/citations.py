@@ -19,4 +19,10 @@ Note: The current implementation has been significantly enhanced beyond these so
 - Comprehensive patient information collection
 - AI-powered treatment recommendations
 - PDF report generation
+
+Awards and Recognition:
+- First Place Winner at Bitcamp 2025 (University of Maryland)
+  - Category: Healthcare & AI Innovation
+  - Date: April 2025
+  - Recognition: Selected as the top project among hundreds of submissions for its innovative approach to medical AI assistance and potential impact on healthcare
 """ 

@@ -1,6 +1,15 @@
 # NeuroScan.AI 🧠
 
+🏆 **BITCAMP 2025 FIRST PLACE WINNER** 🏆
+
 NeuroScan.AI is an advanced brain tumor classification system that combines state-of-the-art deep learning with personalized medical recommendations. The system analyzes MRI scans, provides detailed classifications, and generates comprehensive medical reports with treatment recommendations.
+
+## Awards & Recognition
+
+- 🥇 **First Place Winner at Bitcamp 2025**
+  - Recognized for innovative application of AI in healthcare
+  - Praised for combining deep learning with Google's Gemini AI for medical recommendations
+  - Highlighted for professional medical report generation and user-friendly interface
 
 🌐 **Live Demo**: [https://neuroscan-ai.onrender.com/](https://neuroscan-ai.onrender.com/)
 
